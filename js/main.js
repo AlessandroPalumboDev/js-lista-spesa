@@ -9,3 +9,18 @@ const ul = document.getElementById('lista-spesa');
 // Creo una variabile esterna al ciclo per tenere il conto
 let count = 0;
 
+// Creo un ciclo finchè la variabile esterna è uguale alla lunghezza di array
+while (count !== lista.length) {
+
+    // Creo l'elemento li
+        const li = document.createElement('li');
+    
+    // Appendo l'elemento dell'array a li
+        li.append(lista[count]);
+    
+    // appendo li a ul
+        ul.append(li);
+    
+    // incremento la variabile esterna al ciclo
+        count++;
+    };
