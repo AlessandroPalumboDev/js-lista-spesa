@@ -7,20 +7,20 @@ const lista = ['pasta', 'cioccolata', 'porchetta', 'tovaglioli', 'trippa', 'pomo
 const ul = document.getElementById('lista-spesa');
 
 // Creo una variabile esterna al ciclo per tenere il conto
-let count = 0;
+let index = 0;
 
 // Creo un ciclo finchè la variabile esterna è uguale alla lunghezza di array
-while (count !== lista.length) {
+while (index < lista.length) {
 
     // Creo l'elemento li
         const li = document.createElement('li');
     
     // Appendo l'elemento dell'array a li
-        li.append(lista[count]);
+        li.append(lista[index]);
     
     // appendo li a ul
         ul.append(li);
     
     // incremento la variabile esterna al ciclo
-        count++;
+        index++;
     };
